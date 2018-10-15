@@ -10,15 +10,15 @@
 }
 
 @font-face {
-  font-family: LondonM;
-  src: url(../fonts/LondonMM.ttf);
+  font-family: Manyeto;
+  src: url(../fonts/MANDINGA.TTF);
 }
 
 h1 {
   font-family: Destruct;
   letter-spacing: 5px;
   font-size: 100px;
-  color: #F0E93E;
+  text-shadow: 1px 1px black;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -26,19 +26,58 @@ h1 {
   margin-bottom: 25px;
 }
 
+.header {
+  color: #f7d45f;
+}
+
+.header2 {
+  color: #f7d45f;
+}
+
 p {
-  font-family: London;
-  color: #D0D1AA;
+  font-family: Manyeto;
+  text-shadow: 0.75px 0.75px black;
   text-align: center;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 28px;
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
   padding: 0;
 }
 
+.bodyTitle {
+  font-size: 21px;
+  color: #840909;
+}
+
+.bodyText {
+  color: #F8E6D7;
+  width: 45%;
+}
+
 .pAdjust {
   width: 70%;
+}
+
+/* Background Colors */
+.demo-1 .bg1 .sl-slide-inner,
+.demo-1 .bg1 .sl-content-slice {
+	background: radial-gradient(circle at top right, #40403A, rgba(13,13,12, 0.88));
+}
+
+.demo-1 .bg2 .sl-slide-inner,
+.demo-1 .bg2 .sl-content-slice  {
+	background: radial-gradient(circle at top right, #030D29, rgba(6,4,64, 0.88));
+}
+
+.demo-1 .bg3 .sl-slide-inner,
+.demo-1 .bg3 .sl-content-slice  {
+	background: radial-gradient(circle at top right, #767272, #C1A3A3);
+}
+
+.demo-1 .bg4 .sl-slide-inner,
+.demo-1 .bg4 .sl-content-slice  {
+	background: radial-gradient(circle at top right, #5F5151, #BC8E8E);
 }
 
 .divSize {
@@ -46,10 +85,75 @@ p {
   margin: 0 10px 0 10px;
 }
 
+/* Positioning */
+.spacing {
+  margin-top: 100px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .storyPG {
   text-align: left;
   margin-left: 10%;
   width: 40%;
+}
+
+/* For Map */
+.mapPos {
+    width: 65%;
+    margin-right: 10%;
+    padding: 0;
+    align-items: center;
+}
+
+#us-map{
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+path:hover, circle:hover {
+  stroke: black !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #911D1D !important;
+  cursor: pointer;
+}
+#path67 {
+  fill: none !important;
+  stroke: #A9A9A9 !important;
+  cursor: default;
+}
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #F8E6D7;
+  border: 2px solid #840909;
+  color: #840909;
+  box-shadow: 1px 1px black;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: Manyeto;
+  font-size: 16px;
+  text-align: center;
 }
 
 /* Images */
@@ -84,28 +188,6 @@ img {
   align-items: center;
 }
 
-.spacing {
-  margin-top: 100px;
-}
-
-/* Flexers */
-.flex {
-  display: flex;
-  justify-content: center;
-}
-
-.flex2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-
-.flex3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Graph */
 .bar1 {
   width: 200px;
@@ -117,7 +199,7 @@ img {
 
 .flex3:hover {
   cursor: pointer;
-  background: red;
+  background: #840909;
 }
 
 .myDropCap {
@@ -162,27 +244,6 @@ img {
 	position: relative;
 }
 
-/* Background Colors */
-.demo-1 .bg1 .sl-slide-inner,
-.demo-1 .bg1 .sl-content-slice {
-	background: radial-gradient(circle at top right, #40403A, rgba(13,13,12, 0.88));
-}
-
-.demo-1 .bg2 .sl-slide-inner,
-.demo-1 .bg2 .sl-content-slice  {
-	background: radial-gradient(circle at top right, #030D29, rgba(6,4,64, 0.88));
-}
-
-.demo-1 .bg3 .sl-slide-inner,
-.demo-1 .bg3 .sl-content-slice  {
-	background: radial-gradient(circle at top right, #957F7F, rgb(90,85,85));
-}
-
-.demo-1 .bg4 .sl-slide-inner,
-.demo-1 .bg4 .sl-content-slice  {
-	background: radial-gradient(circle at top right, #40403A, rgb(88,61,61));
-}
-
 /* For Quiz */
 .ysquiz {
   font-family: London;
@@ -201,42 +262,29 @@ img {
   border: none;
 }
 
-/* For Map */
-.mapPos {
-    width: 65%;
-    margin-right: 10%;
-    padding: 0;
-}
+@media (max-width: 982px) {
+  /* For First Slide */
+  h1 {
+    font-size: 45px;
+    margin-bottom: 5px;
+  }
 
-#us-map{
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-path:hover, circle:hover {
-  stroke: black !important;
-  stroke-width:2px;
-  stroke-linejoin: round;
-  fill: #911D1D !important;
-  cursor: pointer;
-}
-#path67 {
-  fill: none !important;
-  stroke: #A9A9A9 !important;
-  cursor: default;
-}
-#info-box {
-  display: none;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-  background-color: #ffffff;
-  border: 2px solid #BF0A30;
-  border-radius: 5px;
-  padding: 5px;
-  font-family: LondonM;
-  font-size: 18px;
-  text-align: center;
+  p {
+    font-size: 14px;
+  }
+
+  .body1 {
+    width: 60%;
+  }
+
+  /* For Second Slide */
+  .mapPos {
+    display: none;
+  }
+
+  .storyPG {
+    text-align: center;
+    margin: 0;
+    width: 60%;
+  }
 }
