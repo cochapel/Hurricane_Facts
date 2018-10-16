@@ -82,35 +82,60 @@ $(function() {
 });
 
 // For iziModal
-$("#modal1").iziModal();
-$("#modal2").iziModal();
-$("#modal3").iziModal();
-$("#modal4").iziModal();
-$("#modal5").iziModal();
-$("#modal6").iziModal();
+var aTitle1 = 'Hurricane Igor';
+var aTitle2 = 'Hurricane Sandy';
+var aTitle3 = 'Hurricane Katrina';
+var aTitle4 = 'Hurricane Harvey';
+var aTitle5 = 'Hurricane Sandy';
+
+$("#modal1").iziModal({
+    title: aTitle1.fontcolor('#f7d45f').fontsize(5).bold(),
+    headerColor: '#1F1D1D',
+});
+
+$("#modal2").iziModal({
+  title: aTitle2.fontcolor('#f7d45f').fontsize(5).bold(),
+  headerColor: '#1F1D1D',
+});
+$("#modal3").iziModal({
+  title: aTitle3.fontcolor('#f7d45f').fontsize(5).bold(),
+  headerColor: '#1F1D1D',
+});
+$("#modal4").iziModal({
+  title: aTitle3.fontcolor('#f7d45f').fontsize(5).bold(),
+  headerColor: '#1F1D1D',
+});
+$("#modal5").iziModal({
+  title: aTitle4.fontcolor('#f7d45f').fontsize(5).bold(),
+  headerColor: '#1F1D1D',
+});
+$("#modal6").iziModal({
+  title: aTitle5.fontcolor('#f7d45f').fontsize(5).bold(),
+  headerColor: '#1F1D1D',
+});
 $("#modal7").iziModal();
 
 // For Quiz
 var myQuestions = [{
-    question: "What is the sixth month of the year?",
-    answers: ["July", "August", "May", "April"],
-    correct: "June"
+    question: "Between what dates is hurricane season?",
+    answers: ["Dec. 1 to June 1", "Aug. 15 to Oct. 15", "March 22 to Jun 21", "May 1 to Dec. 1"],
+    correct: "June 1 to Dec. 1"
   }, {
-    question: "Fill in the missing number: 24, 31, 38, 45, 52, ?",
-    answers: ["54", "23", "65", "44"],
-    correct: "59"
+    question: "Which hurricane is the worst natural disaster in U.S. history?",
+    answers: ["Katrina", "Harvey", "Sandy", "Labor Day Hurricane"],
+    correct: "Great Galveston Hurricane"
   }, {
-    question: "Which of the dates below is the latest?",
-    answers: ["February 20, 1992", "June 14, 1929", "May 31, 1992", "June 6, 1929"],
-    correct: "October 14, 1992"
+    question: "How much of New Orleans was underwater after Hurricane Katrina?",
+    answers: ["20%", "15%", "none", "70%"],
+    correct: "80%"
   }, {
-    question: "A clock lost 2 minutes and 20 seconds in 40 days. How many seconds did it lose per day?",
-    answers: ["1.5", "2", "2.5", "3"],
-    correct: "3.5"
+    question: "How much rain fell over Texas in total during Hurricane Harvey?",
+    answers: ["50 inches", "51 inches", "25 trillion gallons", "27 billion gallons"],
+    correct: "27 trillion gallons"
   }, {
-    question: "A test has 30 questions. If Tom gets 70% correct, how many questions did Tom get wrong?",
-    answers: ["7", "8", "10", "6"],
-    correct: "9"
+    question: "What was the maximum sustained winds of the Labor Day Hurricane of 1935?",
+    answers: ["200", "189", "170", "180"],
+    correct: "185"
   }];
 
   var myQuiz = new ysQuiz(myQuestions, {

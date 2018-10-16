@@ -32,6 +32,11 @@ h1 {
 
 .header2 {
   color: #f7d45f;
+  margin-bottom: 100px;
+}
+
+.header3 {
+  color: #f7d45f;
 }
 
 p {
@@ -52,37 +57,58 @@ p {
 
 .bodyText {
   color: #F8E6D7;
+  font-size: 21px;
   width: 45%;
 }
 
-.pAdjust {
-  width: 70%;
+.anBodyText {
+  color: #F8E6D7;
+  font-size: 18px;
+  width: 45%;
+}
+
+.bodyTitle2 {
+  color: #F8E6D7;
+  font-size: 24px;
+}
+
+.bodyText2 {
+  text-align: left;
+  margin: 0;
+  padding: 15px;
+  background: rgba(31,29,29, 0.8);
+  color: #F8E6D7;
+  width: 100%;
+}
+
+.bodyTitle3 {
+  color: #f7d45f;
+  font-size: 24px;
+}
+
+.bodyText3 {
+  color: #F8E6D7;
 }
 
 /* Background Colors */
 .demo-1 .bg1 .sl-slide-inner,
-.demo-1 .bg1 .sl-content-slice {
-	background: radial-gradient(circle at top right, #40403A, rgba(13,13,12, 0.88));
+.demo-1 .bg1 .sl-content-slice  {
+	background: radial-gradient(circle at top right, #767272, #C1A3A3);
 }
 
 .demo-1 .bg2 .sl-slide-inner,
 .demo-1 .bg2 .sl-content-slice  {
-	background: radial-gradient(circle at top right, #030D29, rgba(6,4,64, 0.88));
+	background: radial-gradient(circle at top right, #5F5151, #BC8E8E);
 }
 
 .demo-1 .bg3 .sl-slide-inner,
-.demo-1 .bg3 .sl-content-slice  {
-	background: radial-gradient(circle at top right, #767272, #C1A3A3);
+.demo-1 .bg3 .sl-content-slice {
+	background: radial-gradient(circle at top right, #1F1D1D, #937272);
 }
 
 .demo-1 .bg4 .sl-slide-inner,
 .demo-1 .bg4 .sl-content-slice  {
-	background: radial-gradient(circle at top right, #5F5151, #BC8E8E);
-}
-
-.divSize {
-  width: 100%;
-  margin: 0 10px 0 10px;
+	background: radial-gradient(circle at bottom right, #BC8E8E, #5F5151);
 }
 
 /* Positioning */
@@ -113,6 +139,11 @@ p {
   width: 40%;
 }
 
+.divSize {
+  width: 100%;
+  margin: 0 10px 0 10px;
+}
+
 /* For Map */
 .mapPos {
     width: 65%;
@@ -127,18 +158,13 @@ p {
   left: 0;
   width: 100%;
 }
-path:hover, circle:hover {
-  stroke: black !important;
-  stroke-width:2px;
-  stroke-linejoin: round;
-  fill: #911D1D !important;
-  cursor: pointer;
-}
+
 #path67 {
   fill: none !important;
   stroke: #A9A9A9 !important;
   cursor: default;
 }
+
 #info-box {
   display: none;
   position: absolute;
@@ -168,13 +194,19 @@ path:hover, circle:hover {
 
 img {
   width: 100%;
-  text-align: center;
 }
 
 .swirl {
   width: 150px;
   height: 150px;
   padding: 25px;
+}
+
+.swirl2 {
+  width: 150px;
+  height: 150px;
+  padding: 25px;
+  margin-bottom: 25px;
 }
 
 .map {
@@ -192,43 +224,34 @@ img {
 .bar1 {
   width: 200px;
   height: 375px;
-  background: yellow;
-  border: 5px solid black;
-  box-shadow: 1px 1px 10px;
-}
-
-.flex3:hover {
-  cursor: pointer;
-  background: #840909;
-}
-
-.myDropCap {
-  width: 20%;
-  height: auto;
+  background: #B7A466;
+  border: 3px solid black;
+  box-shadow: 0.5px 0.5px black;
 }
 
 .bar2 {
   width: 200px;
   height: 375px;
-  background: orange;
-  border: 5px solid black;
-  box-shadow: 1px 1px 10px;
+  background: #958550;
+  border: 3px solid black;
+  box-shadow: 0.5px 0.5px black;
 }
 
 .bar3 {
   width: 200px;
   height: 200px;
-  background: purple;
-  border: 5px solid black;
-  box-shadow: 1px 1px 10px;
+  background: #817342;
+  border: 3px solid black;
+  box-shadow: 0.5px 0.5px black;
 }
 
-.bar4 {
-  width: 200px;
-  height: 160px;
-  background: blue;
-  border: 5px solid black;
-  box-shadow: 1px 1px 10px;
+/* Hover States */
+path:hover, circle:hover {
+  stroke: black !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #911D1D !important;
+  cursor: pointer;
 }
 
 .swirl:hover {
@@ -237,36 +260,74 @@ img {
   padding: 12.5px;
 }
 
+.flex3:hover {
+  cursor: pointer;
+  background: #840909;
+}
+
 .demo-1 .sl-slide .paraWidth blockquote p {
 	margin: 0 auto;
 	width: 25%;
-	/* max-width: 400px; */
 	position: relative;
 }
 
 /* For Quiz */
 .ysquiz {
-  font-family: London;
-  font-size: 21px;
+  font-family: Manyeto;
+  font-size: 16px;
   line-height: 25px;
-  color: #D0D1AA;
+  color: #F8E6D7;
+  text-shadow: 1px 1px black;
 }
 
 .ysquiz .ysquiz-content .ysquiz-question button {
-  font-family: London;
-  font-size: 28px;
-  padding: 10px;
+  font-family: Manyeto;
+  font-size: 18px;
+  padding: 5px;
   border-radius: 5px;
-  background: gradient(#40403A, rgba(13,13,12, 0.88));
-  color: #D0D1AA;
-  border: none;
+  background: #F8E6D7;
+  color:#840909;
+  border: 2px solid #840909;
+  box-shadow: 1px 1px black;
 }
 
+.ysquiz .ysquiz-content .ysquiz-question button:hover {
+  background: #840909;
+  color: #F8E6D7;
+}
+
+/* Hiding Items */
+.firHide {
+  display: none;
+}
+
+/* The Arrows */
+.nav-arrows span {
+  border: 8px solid rgba(247,212,95, 0.4);
+}
+
+/* Media Queries */
 @media (max-width: 982px) {
+  .spacing {
+    margin-top: 55px;
+  }
+
   /* For First Slide */
-  h1 {
+  .demo-1 .deco {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 75%;
+  }
+
+  .header {
     font-size: 45px;
-    margin-bottom: 5px;
+  }
+
+  .bodyText {
+    font-size: 18px;
+    width: 75%;
   }
 
   p {
@@ -286,5 +347,41 @@ img {
     text-align: center;
     margin: 0;
     width: 60%;
+  }
+
+  /* For Third Slide */
+  .header2 {
+    font-size: 72px;
+  }
+
+  .bodyTitle2 {
+    font-size: 16px;
+  }
+
+  /* For Fourth Slide */
+  .header3 {
+    font-size: 72px;
+    margin-bottom: 25px;
+  }
+
+  /* For Fifth Slide */
+  .swirl2 {
+    margin-bottom: 5px;
+  }
+
+  /* Hiding Items */
+  .firHide {
+    display: block;
+  }
+
+  .secHide {
+    display: none;
+  }
+}
+
+@media (max-width: 1045px) {
+  /* For Second Slide */
+  .anBodyText {
+    font-size: 16px;
   }
 }
